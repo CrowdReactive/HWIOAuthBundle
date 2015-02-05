@@ -222,6 +222,7 @@ class ConnectController extends ContainerAware
 
                 return $this->container->get('templating')->renderResponse('HWIOAuthBundle:Connect:connect_success.html.' . $this->getTemplatingEngine(), array(
                     'userInformation' => $userInformation,
+                    'service' => $service,
                 ));
             }
         }
